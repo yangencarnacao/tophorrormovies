@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Filmes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/assistidos">Meus Filmes</a></li>
+          <li><a href="/piores_filmes_terror">Piores Filmes Terror</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Top Filmes</h1>
+      <div id="gallery">
+        <!-- Galeria de Filmes -->
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const options = {
+        method: 'GET',
+        url: 'https://online-movie-database.p.rapidapi.com/title/v2/get-popular-movies-by-genre',
+        params: {genre: 'horror', limit: '10'},
+        headers: {
+          'X-RapidAPI-Key': '12451fb6b0msh00650b3cf3048a8p104daajsn34f5f488e3f4',
+          'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
+        }
+      };
+
+      axios.request(options).then(function (response) {
+        const gallery = document.querySelector("#gallery");
+        const movies = response.data.titles;
+
+        movies.forEach(movie => {
+          const movieElement = document.createElement("div");
+          movieElement.className = "movie";
+
+          const movieCover = document.createElement("img");
+          movieCover.src = movie.image.url;
+
+          const movieTitle = document.createElement("h2");
+          movieTitle.textContent = movie.title;
+
+          movieElement.appendChild(movieCover);
+          movieElement.appendChild(movieTitle);
+
+          gallery.appendChild(movieElement);
+        });
+      }).catch(function (error) {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

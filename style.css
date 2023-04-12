@@ -1,0 +1,182 @@
+/* Estilos do site de filmes de terror (versão sombria com cores verde, vermelho e roxo) */
+
+/* Cor de fundo do body */
+body {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo do menu de navegação */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Estilo da lista de filmes */
+  main {
+    margin: 20px;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  main li {
+    margin-bottom: 5px;
+  }
+  
+  main a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+  }
+  
+  main a:hover {
+    background-color: #666;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    background-color: #990000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff0000;
+  }
+  
+  /* Estilo dos formulários */
+  form {
+    margin: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+  }
+  
+  form input[type="submit"] {
+    background-color: #009900;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #00cc00;
+  }
+  
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Estilo das mensagens de erro */
+  .error-message {
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo das mensagens de sucesso */
+  .success-message {
+    color: #00cc00;
+    margin-bottom: 10px;
+  }
+  
+  /* Cores personalizadas */
+  .green {
+    color: #00cc00;
+  }
+  
+  .red {
+    color: #ff0000;
+  }
+  
+  .purple {
+    color: #6a0dad;
+  }
+
+    .green-bg {
+        background-color: #00cc00;
+        }
+        
+        .red-bg {
+        background-color: #ff0000;
+        }
+        
+        .purple-bg {
+        background-color: #6a0dad;
+        }
+
+
+        

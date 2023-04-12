@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Melhores Filmes de Terror</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Melhores Filmes de Terror</h1>
+      <p>Adicione, edite e delete filmes da lista!</p>
+    </header>
+    <div>
+        <label for="search-movie">Buscar Filme:</label>
+        <input type="text" id="search-movie" name="search-movie">
+        <button type="button" id="search-button">Buscar</button>
+      </div>
+    <main>
+      <form id="form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="genre">Gênero:</label>
+        <select id="genre" name="genre" required>
+          <option value="">Selecione o subgênero</option>
+          <option value="Slasher">Slasher</option>
+          <option value="Sobrenatural">Sobrenatural</option>
+          <option value="Zumbi">Zumbi</option>
+          <option value="Found Footage">Found Footage</option>
+          <option value="Monstros">Monstros</option>
+          <option value="Alienígenas">Alienígenas</option>
+          <option value="Vampiro">Vampiro</option>
+          <option value="Bruxas">Bruxas</option>
+          <option value="Possessão">Possessão</option>
+          <option value="Ficção Científica">Ficção Científica</option>
+          <option value="Distopia">Distopia</option>
+          <option value="Pós-apocalíptico">Pós-apocalíptico</option>
+          <option value="Canibalismo">Canibalismo</option>
+          <option value="Serial Killer">Serial Killer</option>
+          <option value="Psicológico">Psicológico</option>
+          <option value="Espíritos">Espíritos</option>
+          <option value="Assombração">Assombração</option>
+          <option value="Maldição">Maldição</option>
+          <option value="Exorcismo">Exorcismo</option>
+          <option value="Sátira">Sátira</option>
+          <option value="Comédia">Comédia</option>
+          <option value="Terror Gótico">Terror Gótico</option>
+          <option value="Terror Asiático">Terror Asiático</option>
+          <option value="Terror Europeu">Terror Europeu</option>
+          <option value="Terror Australiano">Terror Australiano</option>
+        </select>
+        <label for="year">Nota:</label>
+        <input type="number" id="nota" name="nota" min="0" max="10" required>
+        <label for="year">Ano:</label>
+        <input type="number" id="year" name="year" min="1900" max="2099" required>
+        <button type="submit">Adicionar Filme</button>
+      </form>
+ 
+      <ul id="movies-list"></ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
